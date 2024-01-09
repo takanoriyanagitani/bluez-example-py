@@ -7,15 +7,15 @@ import dbus # type: ignore
 from gi.repository import GObject, GLib # type: ignore
 from dbus.mainloop.glib import DBusGMainLoop # type: ignore
 
-BLUEZ_SERVICE_NAME = "org.bluez"
-GATT_SERVICE_IFACE = "org.bluez.GattService1"
-GATT_CHRC_IFACE    = "org.bluez.GattCharacteristic1"
+BLUEZ_SERVICE_NAME: str = "org.bluez"
+GATT_SERVICE_IFACE: str = "org.bluez.GattService1"
+GATT_CHRC_IFACE: str    = "org.bluez.GattCharacteristic1"
 
-DBUS_OM_IFACE = "org.freedesktop.DBus.ObjectManager"
-DBUS_PROP_IFACE = "org.freedesktop.DBus.Properties"
+DBUS_OM_IFACE: str = "org.freedesktop.DBus.ObjectManager"
+DBUS_PROP_IFACE: str = "org.freedesktop.DBus.Properties"
 
-HR_SVC_UUID   = "0000180d-0000-1000-8000-00805f9b34fb"
-HR_MSRMT_UUID = "00002a37-0000-1000-8000-00805f9b34fb"
+HR_SVC_UUID: str   = "0000180d-0000-1000-8000-00805f9b34fb"
+HR_MSRMT_UUID: str = "00002a37-0000-1000-8000-00805f9b34fb"
 
 def val2hb(value):
 	flags = value[0]
